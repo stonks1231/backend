@@ -16,6 +16,7 @@ The backend uses the following systems
 2. redis - currently only used to store number of posts by a user
 3. python client using praw - to get data from reddit
 4. spacy - currently only used to extract ticker symbols
+5. nginx - for SSL termination, hosting React frontend and proxying WS to deepstream server
 
 ## Installation
 1. Install deepstream by following instructions [here](https://deepstream.io/tutorials/getting-started/javascript/)

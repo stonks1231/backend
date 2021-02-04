@@ -1,0 +1,16 @@
+[Unit]
+Description=WSB comments stream
+After=network.target
+
+[Service]
+Type=simple
+StandardOutput=/home/bijutiju/reddit_client/var/logs/stdout.log
+StandardError=/home/bijutiju/reddit_client/var/logs/stderr.log
+ExecStart=/home/bijutiju/reddit_client/wsb_comments.sh
+Restart=always
+User=bijutiju
+Group=bijutiju
+Environment=
+
+[Install]
+WantedBy=multi-user.target
